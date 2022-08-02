@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		2403EDF12793871F002AF6FA /* UnipayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2403EDF02793871F002AF6FA /* UnipayApp.swift */; };
-		2403EDF32793871F002AF6FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2403EDF22793871F002AF6FA /* ContentView.swift */; };
+		2403EDF32793871F002AF6FA /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2403EDF22793871F002AF6FA /* OnboardingView.swift */; };
 		2403EDF52793871F002AF6FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2403EDF42793871F002AF6FA /* Assets.xcassets */; };
 		2403EDF82793871F002AF6FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2403EDF72793871F002AF6FA /* Preview Assets.xcassets */; };
+		2403EE00279387B3002AF6FA /* ColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2403EDFF279387B3002AF6FA /* ColorExt.swift */; };
+		241503C927946C730047ECD3 /* UColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241503C827946C730047ECD3 /* UColor.swift */; };
+		241503CE2794728E0047ECD3 /* CustomPageIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241503CD2794728E0047ECD3 /* CustomPageIndicator.swift */; };
+		241503D0279477390047ECD3 /* BackgroundLightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241503CF279477390047ECD3 /* BackgroundLightView.swift */; };
+		244A6D4727A935690077F482 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244A6D4627A935690077F482 /* HomeView.swift */; };
+		244A6D4A27A935850077F482 /* HomeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244A6D4927A935850077F482 /* HomeCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2403EDED2793871F002AF6FA /* Unipay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Unipay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2403EDF02793871F002AF6FA /* UnipayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnipayApp.swift; sourceTree = "<group>"; };
-		2403EDF22793871F002AF6FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2403EDF22793871F002AF6FA /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		2403EDF42793871F002AF6FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2403EDF72793871F002AF6FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2403EDFF279387B3002AF6FA /* ColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExt.swift; sourceTree = "<group>"; };
+		241503C827946C730047ECD3 /* UColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UColor.swift; sourceTree = "<group>"; };
+		241503CD2794728E0047ECD3 /* CustomPageIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageIndicator.swift; sourceTree = "<group>"; };
+		241503CF279477390047ECD3 /* BackgroundLightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundLightView.swift; sourceTree = "<group>"; };
+		244A6D4627A935690077F482 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		244A6D4927A935850077F482 /* HomeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,12 @@
 		2403EDEF2793871F002AF6FA /* Unipay */ = {
 			isa = PBXGroup;
 			children = (
+				244A6D4527A9355C0077F482 /* Home */,
+				241503D1279479800047ECD3 /* Onboarding */,
+				241503CA279472500047ECD3 /* CommonUI */,
+				241503C727946C310047ECD3 /* Design */,
+				2403EDFE279387A6002AF6FA /* Ext */,
 				2403EDF02793871F002AF6FA /* UnipayApp.swift */,
-				2403EDF22793871F002AF6FA /* ContentView.swift */,
 				2403EDF42793871F002AF6FA /* Assets.xcassets */,
 				2403EDF62793871F002AF6FA /* Preview Content */,
 			);
@@ -65,6 +81,56 @@
 				2403EDF72793871F002AF6FA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2403EDFE279387A6002AF6FA /* Ext */ = {
+			isa = PBXGroup;
+			children = (
+				2403EDFF279387B3002AF6FA /* ColorExt.swift */,
+			);
+			path = Ext;
+			sourceTree = "<group>";
+		};
+		241503C727946C310047ECD3 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				241503C827946C730047ECD3 /* UColor.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		241503CA279472500047ECD3 /* CommonUI */ = {
+			isa = PBXGroup;
+			children = (
+				241503CD2794728E0047ECD3 /* CustomPageIndicator.swift */,
+				241503CF279477390047ECD3 /* BackgroundLightView.swift */,
+			);
+			path = CommonUI;
+			sourceTree = "<group>";
+		};
+		241503D1279479800047ECD3 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				2403EDF22793871F002AF6FA /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		244A6D4527A9355C0077F482 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				244A6D4827A935720077F482 /* Views */,
+				244A6D4627A935690077F482 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		244A6D4827A935720077F482 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				244A6D4927A935850077F482 /* HomeCard.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +203,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2403EDF32793871F002AF6FA /* ContentView.swift in Sources */,
+				2403EDF32793871F002AF6FA /* OnboardingView.swift in Sources */,
+				244A6D4727A935690077F482 /* HomeView.swift in Sources */,
+				241503D0279477390047ECD3 /* BackgroundLightView.swift in Sources */,
+				2403EE00279387B3002AF6FA /* ColorExt.swift in Sources */,
+				244A6D4A27A935850077F482 /* HomeCard.swift in Sources */,
 				2403EDF12793871F002AF6FA /* UnipayApp.swift in Sources */,
+				241503C927946C730047ECD3 /* UColor.swift in Sources */,
+				241503CE2794728E0047ECD3 /* CustomPageIndicator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

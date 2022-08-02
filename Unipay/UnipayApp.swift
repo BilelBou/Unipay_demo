@@ -11,7 +11,7 @@ import SwiftUI
 struct UnipayApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            OnboardingView()
         }
     }
 }
